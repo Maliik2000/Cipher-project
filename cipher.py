@@ -1,4 +1,7 @@
 #Malik Windham
+'''
+Hey Malik, I will be sending you feedback using comments like this. I won't be changing any of the code unless you request it.
+'''
 #Caesar Decypher for 10 letter shift
 def decypher(message):
   hold = []
@@ -11,6 +14,25 @@ def decypher(message):
       hold.append(chr(ord(letter) + 10))
   decoded = "".join(hold)
   return decoded
+  '''
+This fuction was quite simple yet effective. To make it more effective try to use the the lower() function to account for uppercase letter.
+Also to obtain all symbols and number instead of the one listed you can follow this format.
+
+Ex.
+def function(message)
+hold[]
+message = message.lower()
+
+for letter in message:
+  if letter > 122:
+    append
+  elif letter <= 122:
+    append
+  else
+    append(letter) #append any other thing
+
+  Disclaimer I am not familiar with the ord function, but something like this will not only allow you to use capital case and also any symbol insdie the code
+  '''
 
 #Ceasar Decypher for 14 letter shift
 def decypher_special(message):
@@ -24,6 +46,11 @@ def decypher_special(message):
       hold.append(chr(ord(letter) + 14))
   decoded = "".join(hold)
   return decoded
+  
+'''
+Alot of the same thing mentioned above
+'''
+
 #Breaks all caesar ciphers
 def trial_by_fire(message):
   offset = 26
@@ -43,6 +70,8 @@ def trial_by_fire(message):
     print(verify, "\n")
     trial += 1
     offset -= 1
+
+
   
 #Ceasar encyrption 10 letter shift
 def encryption(message):
@@ -75,6 +104,12 @@ print(decypher_special(second_message), "\n")
 third_message ="vhfinmxkl atox kxgwxkxw tee hy maxlx hew vbiaxkl hulhexmx. px'ee atox mh kxteer lmxi ni hnk ztfx by px ptgm mh dxxi hnk fxlltzxl ltyx."
 
 trial_by_fire(third_message)
+
+'''
+One thing that broke my code was print(decyper(encryption(message))).
+It seem your function works perefctly, just thuings like these helps me improve my code
+'''
+
 #Vigenere break
 def vigenere_cipher(keyword, message):
   length_message = len(message)
@@ -92,7 +127,7 @@ def vigenere_cipher(keyword, message):
         length_message -= 1
         if i >= key_size:
           i = 0
-    
+
   cipher_message = "".join(hold)
   print(cipher_message)
   length_message = len(message)
@@ -147,6 +182,10 @@ def vigenere_encryption(keyword, message):
   decoded = "".join(send)
   return decoded
 
+''' 
+For the Vigenere encryption your code lookes great!
+'''
+
 key_1st = "friends"
 vigenere_cipher_1st = "txm srom vkda gl lzlgzr qpdb? fepb ejac! ubr imn tapludwy mhfbz cza ruxzal wg zztylktoikqq!"
 vigenere_cipher(keyword = key_1st, message = vigenere_cipher_1st)
@@ -159,3 +198,8 @@ my_message_encrypt = vigenere_encryption(keyword = key_2nd, message = my_message
 print(my_message_encrypt)
 
 vigenere_cipher(keyword = key_2nd, message = my_message_encrypt)
+
+'''
+Overall your code is great. It does what it should do and I didn't find any error when I was testing it out.
+I will also look into the ord() and char() function thanks to you!
+'''
