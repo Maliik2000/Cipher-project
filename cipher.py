@@ -198,3 +198,8 @@ my_message_encrypt = vigenere_encryption(keyword = key_2nd, message = my_message
 print(my_message_encrypt)
 
 vigenere_cipher(keyword = key_2nd, message = my_message_encrypt)
+
+'''
+Overall your code is great. It does what it should do and I didn't find any error when I was testing it out.
+I will also look into the ord() and char() function thanks to you!
+'''
